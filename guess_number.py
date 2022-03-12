@@ -1,4 +1,8 @@
+#Code written by Salim O. Oyinlola
+
+#Importing Libraries
 import random
+import os
 
 def guess(x):
     random_number = random.randint(1, x)
@@ -34,5 +38,7 @@ print('Pick a option!')
 choice = int(input('Enter 1 if you want to guess a number and 2 if you want the computer to guess your name: '))
 if choice == 1:
     guess(10)
+    os.system("PAUSE")
 elif choice == 2:
     computer_guess(10)
+    os.system("PAUSE")
