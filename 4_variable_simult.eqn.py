@@ -43,3 +43,6 @@ print("M4 is given as: ")
 print(D4/D)
 
 os.system("PAUSE")
+
+#Twitter @kylieyying: https://twitter.com/SalimOpines
+#Github: https://www.github.com/salimcodes

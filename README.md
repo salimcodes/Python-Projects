@@ -1,4 +1,4 @@
-## Python-Projects
+# Python-Projects
 
 A repository created to document all projects/programs/algorithm created (or written) by Salim Olanrewaju Oyinlola in an organized manner.
 
@@ -37,3 +37,9 @@ Contributor's names and contact info
 `quadratic_eqn.py` - Python Program that takes input and returns the roots of a quadratic equation given that b^2 > 4ac. 
 
 `rock-paper-scissors.py` - Program that allows users play Rock-Paper-Scissors with the computer.
+
+`hangman` - File containing the program and words data for Hangman game.
+
+* `hangman.py` - Python script containing the algorithm for the game.
+
+* `words.py` = Python script containing the words.

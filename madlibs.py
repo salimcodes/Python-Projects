@@ -10,3 +10,6 @@ madlibs = f'Computer programming is so {adj}. It makes me so excited all the tim
 
 print(madlibs)
 os.system("PAUSE")
+
+#Twitter @kylieyying: https://twitter.com/SalimOpines
+#Github: https://www.github.com/salimcodes

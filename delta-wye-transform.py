@@ -39,3 +39,7 @@ except ValueError:
     print("PLEASE INPUT NUMBERS FOR RESISTANCE VALUE.")
 
 os.system("PAUSE")
+
+
+#Twitter @kylieyying: https://twitter.com/SalimOpines
+#Github: https://www.github.com/salimcodes

@@ -20,3 +20,6 @@ x_two = (-b - square_root)/denomonator
 print("The roots of the quadratic equations are " + str(x_one) + " and " + str(x_two))
 
 os.system("PAUSE")
+
+#Twitter @kylieyying: https://twitter.com/SalimOpines
+#Github: https://www.github.com/salimcodes

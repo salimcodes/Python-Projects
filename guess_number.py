@@ -42,3 +42,7 @@ if choice == 1:
 elif choice == 2:
     computer_guess(10)
     os.system("PAUSE")
+
+
+#Twitter @kylieyying: https://twitter.com/SalimOpines
+#Github: https://www.github.com/salimcodes

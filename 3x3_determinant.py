@@ -20,3 +20,7 @@ determinant = ((a*e*i)-(a*f*h)-(b*d*i)+(b*f*g)+(c*d*h)-(c*e*g))
 print("The Determinant of the matrix is: " + str(determinant))
 
 os.system("PAUSE")
+
+#Twitter @kylieyying: https://twitter.com/SalimOpines
+#Github: https://www.github.com/salimcodes
+
