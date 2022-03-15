@@ -21,5 +21,8 @@ print("The roots of the quadratic equations are " + str(x_one) + " and " + str(x
 
 os.system("PAUSE")
 
-#Twitter @kylieyying: https://twitter.com/SalimOpines
+
+
+#Twitter @SalimOpines: https://twitter.com/SalimOpines
 #Github: https://www.github.com/salimcodes
+

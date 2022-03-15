@@ -14,7 +14,8 @@ print(" You have been alive for " + str(days_alive))
 
 os.system("PAUSE")
 
-#Twitter @kylieyying: https://twitter.com/SalimOpines
+
+#Twitter @SalimOpines: https://twitter.com/SalimOpines
 #Github: https://www.github.com/salimcodes
 
 

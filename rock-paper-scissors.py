@@ -1,3 +1,5 @@
+#Code written by Salim O. Oyinlola
+
 import random
 import os
 
@@ -21,4 +23,10 @@ def is_win(player, opponent):
         return True
     
 print(play())
+
 os.system("PAUSE")
+
+
+
+#Twitter @SalimOpines: https://twitter.com/SalimOpines
+#Github: https://www.github.com/salimcodes

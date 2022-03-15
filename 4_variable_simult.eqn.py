@@ -44,5 +44,5 @@ print(D4/D)
 
 os.system("PAUSE")
 
-#Twitter @kylieyying: https://twitter.com/SalimOpines
+#Twitter @SalimOpines: https://twitter.com/SalimOpines
 #Github: https://www.github.com/salimcodes

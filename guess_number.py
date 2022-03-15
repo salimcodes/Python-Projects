@@ -38,11 +38,11 @@ print('Pick a option!')
 choice = int(input('Enter 1 if you want to guess a number and 2 if you want the computer to guess your name: '))
 if choice == 1:
     guess(10)
-    os.system("PAUSE")
 elif choice == 2:
-    computer_guess(10)
-    os.system("PAUSE")
+    computer_guess(10) 
+
+os.system("PAUSE")
 
 
-#Twitter @kylieyying: https://twitter.com/SalimOpines
+#Twitter @SalimOpines: https://twitter.com/SalimOpines
 #Github: https://www.github.com/salimcodes
