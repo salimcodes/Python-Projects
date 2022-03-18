@@ -1,9 +1,9 @@
 import os
 import math
 import time
-from player import HumanPlayer, RandomComputerPlayer, SmartComputerPlayer
+from player import HumanPlayer, ComputerPlayer
 
-
+#from player import RandomComputerPlayer
 class TicTacToe():
     def __init__(self):
         self.board = [' ' for _ in range(9)] #Since we will use a single list to rep 3x3 board
@@ -61,7 +61,7 @@ class TicTacToe():
             # print('diag2', diagonal2)
             if all([s == letter for s in diagonal2]):
                 return True
-                
+
         # If all these fail
         return False
 
@@ -98,15 +98,18 @@ def play(game, x_player, o_player, print_game=True):
             if print_game:
                 print(letter + ' makes a move to square {}'.format(square))
                 game.print_board()
-                print('') 
+                print('') #just empty line
 
             if game.current_winner:
                 if print_game:
                     print(letter + ' wins!')
                 return letter  # ends the loop and exits the game
+            #after we made our move, we need to alternate letters
+
             letter = 'O' if letter == 'X' else 'X'  # switches player
 
-        time.sleep(.8)
+        print('Loading...') 
+        time.sleep(1) #Pausing for one second and adding "Loading..." tag to give realistic feel. 
 
     if print_game:
         print('It\'s a tie!')
@@ -114,11 +117,20 @@ def play(game, x_player, o_player, print_game=True):
 
 
 if __name__ == '__main__':
-    x_player = SmartComputerPlayer('X')
-    o_player = HumanPlayer('O')
-    t = TicTacToe()
-    play(t, x_player, o_player, print_game=True)
+    choice = input("Do you want to play as 'X' or 'O'")
+    if choice == 'O' or 'o':
+        x_player = ComputerPlayer('X')
+        o_player = HumanPlayer('O')
+        t = TicTacToe()
+        play(t, x_player, o_player, print_game=True)
+   
 
+    elif choice == 'X' or 'x':
+        x_player = HumanPlayer('X')
+        o_player = ComputerPlayer('O')
+        t = TicTacToe()
+        play(t, o_player, x_player, print_game=True)
+    
 os.system("PAUSE")
 
 
