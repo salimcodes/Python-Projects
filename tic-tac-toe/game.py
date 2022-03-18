@@ -129,7 +129,7 @@ if __name__ == '__main__':
         x_player = HumanPlayer('X')
         o_player = ComputerPlayer('O')
         t = TicTacToe()
-        play(t, o_player, x_player, print_game=True)
+        play(t, x_player, o_player, print_game=True)
     
 os.system("PAUSE")
 
