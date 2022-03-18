@@ -1,8 +1,8 @@
 import os
 
-class TicTacToe:
-    def __init__(self):
-        #self.board = [' ' for ]
+#class TicTacToe:
+#   def __init__(self):
+#        #self.board = [' ' for ]
 
 
 #os.system("PAUSE")
