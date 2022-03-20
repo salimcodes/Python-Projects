@@ -117,7 +117,8 @@ def play(game, x_player, o_player, print_game=True):
 
 
 if __name__ == '__main__':
-    choice = input('Would you like to make the first move? [yes or no]: ')
+    choice = input('Would you like to make the first move? [yes or no]: ') #Getting who plays first
+    
     if choice.lower == "no":
         x_player = ComputerPlayer('X')
         o_player = HumanPlayer('O')
