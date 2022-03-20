@@ -118,13 +118,13 @@ def play(game, x_player, o_player, print_game=True):
 
 if __name__ == '__main__':
     choice = input('Would you like to make the first move? [yes or no]: ')
-    if choice == 'no':
+    if choice.lower == "no":
         x_player = ComputerPlayer('X')
         o_player = HumanPlayer('O')
         t = TicTacToe()
         play(t, x_player, o_player, print_game=True)
 
-    elif choice == 'yes':
+    elif choice.lower == "yes":
         x_player = HumanPlayer('X')
         o_player = ComputerPlayer('O')
         t = TicTacToe()
