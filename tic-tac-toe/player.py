@@ -11,6 +11,7 @@ class Player():
         pass
 
 
+
 class HumanPlayer(Player):
     def __init__(self, letter):
         super().__init__(letter)
@@ -28,6 +29,9 @@ class HumanPlayer(Player):
             except ValueError:
                 print('Invalid square. Try again.')
         return val
+
+
+
 
 class ComputerPlayer(Player):
     def __init__(self, letter):
