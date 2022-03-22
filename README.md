@@ -44,8 +44,11 @@ Contributor's names and contact info
 
 * `words.py` = Python script containing the words.
 
-`tic-tac-toe` - File contain the algorithm for unbeatable tic-tac-toe game
+`tic-tac-toe` - File contain the algorithm for unbeatable tic-tac-toe game.
 
 * `game.py` - Python script containing the game functions i.e. the layout of the game, controlling turns etc.
 
-* `player.py` - Python script containing the functions of each player [Computer and Human]
+* `player.py` - Python script containing the functions of each player. [Computer and Human]
+
+
+`sudoku.py` - Python script that solves nine-by-nine sudoku game.
