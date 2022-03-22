@@ -1,9 +1,9 @@
 import os
 import math
 import time
-from player import HumanPlayer, ComputerPlayer
+from player import HumanPlayer, ComputerPlayer, RandomComputerPlayer
 
-#from player import RandomComputerPlayer
+
 class TicTacToe():
     def __init__(self):
         self.board = [' ' for _ in range(9)] #Since we will use a single list to rep 3x3 board
@@ -20,7 +20,7 @@ class TicTacToe():
     def print_board_nums():
         # 0 | 1 | 2 etc {to tell what number corresponds to what box}
         number_board = [[str(i) for i in range(j*3, (j+1)*3)] for j in range(3)]
-        
+
         for row in number_board:
             print('| ' + ' | '.join(row) + ' |')
 
@@ -115,25 +115,46 @@ def play(game, x_player, o_player, print_game=True):
     if print_game:
         print('It\'s a tie!')
 
+pick = input('Pick difficulty level; A - Easy, B - Hard: ')
+
+if pick.lower() == "a":
+    if __name__ == '__main__':
+        choice = input('Would you like to make the first move? [yes or no]:') #Getting who plays first
+        if choice.lower() == "no":
+            x_player = ComputerPlayer('X')
+            o_player = HumanPlayer('O')
+            t = TicTacToe()
+            play(t, x_player, o_player, print_game=True)
+
+        elif choice.lower() == "yes":
+            x_player = HumanPlayer('X')
+            o_player = RandomComputerPlayer('O')
+            t = TicTacToe()
+            play(t, x_player, o_player, print_game=True)
+
+        else:
+            print('Enter a valid input!')
 
 
-if __name__ == '__main__':
-    choice = input('Would you like to make the first move? [yes or no]:') #Getting who plays first
 
-    if choice.lower() == "no":
-        x_player = ComputerPlayer('X')
-        o_player = HumanPlayer('O')
-        t = TicTacToe()
-        play(t, x_player, o_player, print_game=True)
+elif pick.lower() == "b":
+    if __name__ == '__main__':
+        choice1= input('Would you like to make the first move? [yes or no]:') #Getting who plays first
 
-    elif choice.lower() == "yes":
-        x_player = HumanPlayer('X')
-        o_player = ComputerPlayer('O')
-        t = TicTacToe()
-        play(t, x_player, o_player, print_game=True)
+        if choice1.lower() == "no":
+            x_player = ComputerPlayer('X')
+            o_player = HumanPlayer('O')
+            t = TicTacToe()
+            play(t, x_player, o_player, print_game=True)
 
-    else:
-        print('Enter a valid input!')
+        elif choice1.lower() == "yes":
+            x_player = HumanPlayer('X')
+            o_player = ComputerPlayer('O')
+            t = TicTacToe()
+            play(t, x_player, o_player, print_game=True)
+
+        else:
+            print('Enter a valid input!')
     
 os.system("PAUSE")
 
