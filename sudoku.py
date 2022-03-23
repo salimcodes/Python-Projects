@@ -90,3 +90,8 @@ if __name__ == '__main__':
     ]
     print(solve_sudoku(example_board))
     pprint(example_board)
+
+
+
+#Twitter @SalimOpines: https://twitter.com/SalimOpines
+#Github: https://www.github.com/salimcodes
