@@ -1,7 +1,6 @@
-
 # Code written by Salim O. Oyinlola
 
-# Importing necessary modules
+# Importing necessary libraries
 from decimal import Decimal
 import math
 import os
