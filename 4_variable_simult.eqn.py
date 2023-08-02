@@ -1,7 +1,6 @@
 # Code written by Salim O. Oyinlola
 
 import os
-
 print("IF a set of four variable equation is given as follows: ")
 print("Where M1, M2, M3 and M4 are four unknown variables")
 print("Where equation 1 is given as aM1 + bM2 + cM3 + dM4 = w ")
